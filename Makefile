@@ -2,10 +2,10 @@
 .PHONY: clean test coverage
 
 test:
-	python -m unittest testRecurusive.py
+	python -m unittest testRecursive.py
 
 coverage:
-	coverage run testRecurusive.py
+	coverage run testRecursive.py
 	coverage report
 	coverage html
 	coverage xml

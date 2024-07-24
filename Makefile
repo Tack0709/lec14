@@ -2,10 +2,10 @@
 .PHONY: clean test coverage
 
 test:
-	python -m unittest test_compute.py
+	python -m unittest testRecurusive.py
 
 coverage:
-	coverage run test_compute.py
+	coverage run testRecurusive.py
 	coverage report
 	coverage html
 	coverage xml
@@ -13,4 +13,3 @@ coverage:
 clean:
 	rm -rf *.pyc __pycache__/
 	rm -rf htmlcov/ coverage.xml .coverage
-
